@@ -1,0 +1,30 @@
+.footer {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: $footer-background-color;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .footer-content {
+   display: flex;
+   flex-wrap: wrap;
+   }
+
+   .footer-contact {
+      width: 50%;
+   }
+
+   .footer-social {
+      width: 50%;
+   }
+
+   .subscribtion {
+      flex-grow: 1;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .footer-content {
+   display: flex;
+   }
+}

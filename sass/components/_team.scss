@@ -1,0 +1,104 @@
+.teammates-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+ 
+.teammates-list__item {
+    background-color: $teammate-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 3 * 30px) / 4);
+    }
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+        margin-bottom: 30px;
+        }
+    }
+}
+
+.teammates-list__content {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    padding-right: 122px;
+    padding-left: 122px;
+
+    @media screen and (max-width: 420px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-right: 74px;
+        padding-left: 74px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+}
+
+.teammates-list__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include font(500, 16px, 1.19, inherit);
+    text-align: center;
+    color: $title-text-color;
+}
+
+.teammates-list__text {
+    margin-top: 0;
+    margin-bottom: 16px;
+    @include font(inherit, 16px, 1.19, inherit);
+    text-align: center;
+    color: $text-color;
+}
+
+.networks-list {
+    display: flex;
+}
+    
+.networks-list__item {
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.networks-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+        
+    border-radius: 50%;
+    color: $team-network-icon-color;
+        
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $team-network-icon-background-color;
+        color: $team-network-icon-color-hover;
+    }
+}
+
+.networks-list__icon {
+    fill: currentColor;
+}
