@@ -97,7 +97,7 @@
     color: $portfolio-overlay-description-text;
     background-color: $portfolio-card-overlay-background;
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .project__link:hover &,
