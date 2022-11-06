@@ -30,6 +30,7 @@
     border: 1px solid $portfolio-card-border;
     border-top: none;
     padding: 20px 24px 20px 24px;
+    flex-grow: 1;
 }
 
 .project__title {
@@ -44,7 +45,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
    .project__title--bigger-margin {
     margin-bottom: 40px;
-} 
+    } 
 }
 
 .project__type {
@@ -59,7 +60,6 @@
 .project__description {
     position: relative;
     overflow: hidden;
-    flex-grow: 1;
 }
 
 .project__link {

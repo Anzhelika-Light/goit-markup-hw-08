@@ -17,7 +17,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 3 * 30px) / 4);
+        width: calc((100% - 4 * 30px) / 4);
     }
 
     @media screen and (max-width: 767px) {
@@ -30,23 +30,9 @@
 .teammates-list__content {
     padding-top: 30px;
     padding-bottom: 24px;
-    padding-right: 122px;
-    padding-left: 122px;
-
-    @media screen and (max-width: 420px) {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    @media screen and (min-width: 768px) {
-        padding-right: 74px;
-        padding-left: 74px;
-    }
 
     @media screen and (min-width: 1200px) {
         padding-bottom: 30px;
-        padding-right: 32px;
-        padding-left: 32px;
     }
 }
 
@@ -68,6 +54,7 @@
 
 .networks-list {
     display: flex;
+    justify-content: center;
 }
     
 .networks-list__item {
